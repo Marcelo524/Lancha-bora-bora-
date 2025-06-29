@@ -2,93 +2,151 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Lancha Bora Bora Guarapari</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluguel de Lancha - Bora Bora Guarapari</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f2f2f2; }
-    header, footer { background-color: #003366; color: white; text-align: center; padding: 1em 0; }
-    main { padding: 2em; max-width: 1000px; margin: auto; background-color: white; }
-    h2 { color: #003366; }
-    .faq p { margin: 0.5em 0; }
-    .faq strong { display: block; margin-top: 1em; }
-    .reserva input, .reserva select { margin-bottom: 1em; display: block; width: 100%; padding: 0.5em; }
-    .reserva button { background-color: #003366; color: white; padding: 1em; border: none; cursor: pointer; font-size: 1em; }
-    .reserva button:hover { background-color: #005599; }
-    .galeria { display: flex; flex-wrap: wrap; gap: 10px; }
-    .galeria img { width: 100%; max-width: 300px; border-radius: 8px; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #003366;
+    }
+    .pergunta {
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .reserva {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
-  <header><h1>Aluguel de Lancha - Bora Bora Guarapari</h1></header>
-  <main>
-    <section class="intro">
-      <h2>Bem-vindo!</h2>
-      <p>Desfrute de momentos inesquecíveis a bordo das nossas lanchas de luxo em Guarapari-ES.</p>
-    </section>
+  <header>
+    <h1>Lancha Bora Bora - Guarapari</h1>
+    <p>Navegando com excelência</p>
+  </header>
 
+  <main>
     <section class="reserva">
       <h2>Faça sua Reserva</h2>
-      <label>Data do passeio: <input type="date" /></label>
-      <label>Quantidade de horas:
-        <select>
-          <option value="4">4 horas</option>
-          <option value="5">5 horas</option>
-          <option value="6">6 horas</option>
-          <option value="7">7 horas</option>
-          <option value="8">8 horas</option>
-        </select>
-      </label>
-      <label>Horário de início:
-        <select>
-          <option>08:30</option>
-          <option>09:00</option>
-          <option>13:30</option>
-        </select>
-      </label>
-      <p><strong>Local de embarque:</strong> Cais das escunas - em frente à bomba de combustível do Posto Dino - Guarapari-ES</p>
-      <p><strong>Pagamento:</strong> Pix ou Cartão de Crédito (100% antecipado)</p>
-      <button>FAZER RESERVA</button>
+      <form>
+        <label for="data">Data da Reserva:</label><br>
+        <input type="date" id="data" name="data"><br>
+
+        <label for="horas">Quantidade de Horas (mínimo 4h):</label><br>
+        <input type="number" id="horas" name="horas" min="4"><br>
+
+        <label for="inicio">Horário de Início:</label><br>
+        <select id="inicio" name="inicio">
+          <option value="08:30">08:30</option>
+          <option value="09:00">09:00</option>
+          <option value="13:30">13:30</option>
+        </select><br>
+
+        <label>Pagamento:</label><br>
+        <input type="radio" name="pagamento" value="pix"> Pix<br>
+        <input type="radio" name="pagamento" value="cartao"> Cartão de crédito<br>
+      </form>
+      <p><strong>Embarque:</strong> Cais das escunas, em frente ao posto Dino, Canal de Guarapari-ES.</p>
     </section>
 
-    <section class="faq">
+    <section>
       <h2>Perguntas Frequentes</h2>
-      <strong>Quantas pessoas a lancha comporta?</strong>
-      <p>21 passageiros na lancha de 45 pés e 16 passageiros na lancha de 40 pés.</p>
-      <strong>Criança conta também?</strong>
-      <p>Sim. Para a Capitania dos Portos, crianças contam como passageiros.</p>
-      <strong>O que está incluso?</strong>
-      <p>Tripulação, combustível, gelo no cooler da lancha e carvão para churrasco.</p>
-      <strong>Tem utensílios para churrasco?</strong>
-      <p>Sim. Tábua de cortar carne, faca grande e garfo de manuseio na grelha.</p>
-      <strong>Tem pratos, copos e talheres descartáveis?</strong>
-      <p>Não. O cliente deve levar.</p>
-      <strong>Tem coletes para crianças?</strong>
-      <p>Sim. Temos coletes para todos os adultos e crianças.</p>
-      <strong>Se estiver chovendo, posso remarcar?</strong>
-      <p>Sim. É possível remarcar.</p>
-      <strong>Posso contratar horas extras durante o passeio?</strong>
-      <p>Sim.</p>
-      <strong>A lancha tem som Bluetooth?</strong>
-      <p>Sim.</p>
+
+      <div class="pergunta">
+        <strong>Quantas pessoas a lancha comporta?</strong><br>
+        21 passageiros na lancha de 45 pés e 16 passageiros na lancha de 40 pés.
+      </div>
+
+      <div class="pergunta">
+        <strong>Criança conta também?</strong><br>
+        Sim, para a Capitania dos Portos crianças contam como número de passageiros.
+      </div>
+
+      <div class="pergunta">
+        <strong>O que está incluso?</strong><br>
+        Tripulação, combustível, gelo no cooler e carvão para churrasco.
+      </div>
+
+      <div class="pergunta">
+        <strong>Tem utensílios para churrasco?</strong><br>
+        Sim. Tábua de carne, faca grande e garfo de manuseio.
+      </div>
+
+      <div class="pergunta">
+        <strong>Tem pratos, copos e talheres descartáveis?</strong><br>
+        Não. O cliente é responsável por levar.
+      </div>
+
+      <div class="pergunta">
+        <strong>Tem coletes para crianças?</strong><br>
+        Sim, temos coletes suficientes para todos os adultos e crianças.
+      </div>
+
+      <div class="pergunta">
+        <strong>Se chover no dia, posso remarcar?</strong><br>
+        Sim, pode remarcar para outro dia.
+      </div>
+
+      <div class="pergunta">
+        <strong>Posso contratar horas extras durante o passeio?</strong><br>
+        Sim.
+      </div>
+
+      <div class="pergunta">
+        <strong>A lancha tem som Bluetooth?</strong><br>
+        Sim.
+      </div>
     </section>
 
-    <section class="galeria">
-      <h2>Fotos da Lancha</h2>
-      <img src="imagem1.jpeg" alt="Lancha com clientes">
-      <img src="imagem23.png" alt="Lateral da lancha com nome Bora Bora">
-      <img src="imagem3.jpeg" alt="Capitão no comando">
-      <img src="imagem4.jpeg" alt="Casal brindando ao pôr do sol">
-      <img src="imagem5.jpeg" alt="Lancha vista aérea">
-      <img src="imagem6.jpeg" alt="Grupo de amigas no convés">
-    </section>
-
-    <section class="cancelamento">
+    <section>
       <h2>Política de Cancelamento</h2>
-      <p>Cancelamento com até 72 horas de antecedência: reembolso integral.</p>
-      <p>Cancelamento com menos de 72 horas: sem reembolso (remarcação possível conforme disponibilidade).</p>
-      <p>Em caso de chuva ou condições adversas, remarcação sem custo adicional.</p>
+      <p>O cliente pode remarcar sem custo se houver chuva no dia do passeio. Cancelamentos sem justificativa devem ser feitos com 48h de antecedência para reembolso integral.</p>
+    </section>
+
+    <section>
+      <h2>Fotos e Vídeos</h2>
+      <p>Veja imagens reais da lancha e momentos incríveis dos nossos clientes:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/lancha_borabora_guarapari/" target="_blank">Instagram Oficial</a></li>
+        <li><a href="#">Galeria de Fotos</a> (em breve)</li>
+        <li><a href="#">Vídeos</a> (em breve)</li>
+      </ul>
     </section>
   </main>
-  <footer><p>&copy; 2025 Lancha Bora Bora Guarapari</p></footer>
+
+  <footer>
+    <p>&copy; 2025 Lancha Bora Bora - Guarapari | Instagram: @lancha_borabora_guarapari</p>
+  </footer>
 </body>
 </html>
