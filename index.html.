@@ -2,70 +2,24 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Aluguel de Lancha - Bora Bora Guarapari</title>
+  <title>Lancha Bora Bora Guarapari</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-    }
-    header, footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-    }
-    main {
-      padding: 2em;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
-    }
-    h2 {
-      color: #003366;
-    }
-    .faq p {
-      margin: 0.5em 0;
-    }
-    .faq strong {
-      display: block;
-      margin-top: 1em;
-    }
-    .reserva input, .reserva select {
-      margin-bottom: 1em;
-      display: block;
-      width: 100%;
-      padding: 0.5em;
-    }
-    .reserva button {
-      background-color: #003366;
-      color: white;
-      padding: 1em;
-      border: none;
-      cursor: pointer;
-      font-size: 1em;
-    }
-    .reserva button:hover {
-      background-color: #005599;
-    }
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .galeria img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 8px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f2f2f2; }
+    header, footer { background-color: #003366; color: white; text-align: center; padding: 1em 0; }
+    main { padding: 2em; max-width: 1000px; margin: auto; background-color: white; }
+    h2 { color: #003366; }
+    .faq p { margin: 0.5em 0; }
+    .faq strong { display: block; margin-top: 1em; }
+    .reserva input, .reserva select { margin-bottom: 1em; display: block; width: 100%; padding: 0.5em; }
+    .reserva button { background-color: #003366; color: white; padding: 1em; border: none; cursor: pointer; font-size: 1em; }
+    .reserva button:hover { background-color: #005599; }
+    .galeria { display: flex; flex-wrap: wrap; gap: 10px; }
+    .galeria img { width: 100%; max-width: 300px; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Aluguel de Lancha - Bora Bora Guarapari</h1>
-  </header>
+  <header><h1>Aluguel de Lancha - Bora Bora Guarapari</h1></header>
   <main>
     <section class="intro">
       <h2>Bem-vindo!</h2>
@@ -91,8 +45,8 @@
           <option>13:30</option>
         </select>
       </label>
-      <p>Local de embarque: Cais das escunas - em frente à bomba de combustível do Posto Dino - Guarapari-ES</p>
-      <p>Pagamento: Pix ou Cartão de Crédito (100% antecipado)</p>
+      <p><strong>Local de embarque:</strong> Cais das escunas - em frente à bomba de combustível do Posto Dino - Guarapari-ES</p>
+      <p><strong>Pagamento:</strong> Pix ou Cartão de Crédito (100% antecipado)</p>
       <button>FAZER RESERVA</button>
     </section>
 
@@ -100,28 +54,20 @@
       <h2>Perguntas Frequentes</h2>
       <strong>Quantas pessoas a lancha comporta?</strong>
       <p>21 passageiros na lancha de 45 pés e 16 passageiros na lancha de 40 pés.</p>
-
       <strong>Criança conta também?</strong>
       <p>Sim. Para a Capitania dos Portos, crianças contam como passageiros.</p>
-
       <strong>O que está incluso?</strong>
       <p>Tripulação, combustível, gelo no cooler da lancha e carvão para churrasco.</p>
-
       <strong>Tem utensílios para churrasco?</strong>
       <p>Sim. Tábua de cortar carne, faca grande e garfo de manuseio na grelha.</p>
-
       <strong>Tem pratos, copos e talheres descartáveis?</strong>
       <p>Não. O cliente deve levar.</p>
-
       <strong>Tem coletes para crianças?</strong>
       <p>Sim. Temos coletes para todos os adultos e crianças.</p>
-
       <strong>Se estiver chovendo, posso remarcar?</strong>
       <p>Sim. É possível remarcar.</p>
-
       <strong>Posso contratar horas extras durante o passeio?</strong>
       <p>Sim.</p>
-
       <strong>A lancha tem som Bluetooth?</strong>
       <p>Sim.</p>
     </section>
@@ -129,11 +75,11 @@
     <section class="galeria">
       <h2>Fotos da Lancha</h2>
       <img src="imagem1.jpeg" alt="Lancha com clientes">
-      <img src="imagem23.png" alt="Lateral da lancha escrita Bora Bora">
-      <img src="imagem3.jpeg" alt="Capitão no comando da lancha">
+      <img src="imagem23.png" alt="Lateral da lancha com nome Bora Bora">
+      <img src="imagem3.jpeg" alt="Capitão no comando">
       <img src="imagem4.jpeg" alt="Casal brindando ao pôr do sol">
       <img src="imagem5.jpeg" alt="Lancha vista aérea">
-      <img src="imagem6.jpeg" alt="Grupo no convés da lancha">
+      <img src="imagem6.jpeg" alt="Grupo de amigas no convés">
     </section>
 
     <section class="cancelamento">
@@ -143,8 +89,6 @@
       <p>Em caso de chuva ou condições adversas, remarcação sem custo adicional.</p>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Lancha Bora Bora Guarapari</p>
-  </footer>
+  <footer><p>&copy; 2025 Lancha Bora Bora Guarapari</p></footer>
 </body>
-</html
+</html>
